@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Set your preferred font family */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.chicken {
+    background-color: #ffd700; /* Choose your color */
+}
+
+.beef {
+    background-color: #ff6347; /* Choose your color */
+}
+
+.sushi {
+    background-color: #87ceeb; /* Choose your color */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .box {
+        width: 49%; /* Two boxes side by side */
+    }
+    .sushi {
+        width: 100%; /* Full width for the third box */
+        clear: both; /* Move to a new row */
+    }
+}
+
+@media (min-width: 992px) {
+    .box {
+        width: 33.33%; /* Equal width for all three boxes */
+    }
+}
